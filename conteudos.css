@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #9466ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #7159c1;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    filter: brightness(90%);
+    border: none;
+}
+
+header div {
+    text-align: center;
+}
+
+header div a {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #7159c1;
+}
+
+.card__image-container {
+    width: 400px;
+}
+
+.card__image-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+    color: white;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #9bcf96;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+
+}
